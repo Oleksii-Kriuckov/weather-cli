@@ -1,0 +1,32 @@
+{
+  "name": "weather-cli",
+  "version": "1.0.0",
+  "description": "CLI for getting weather",
+  "main": "index.js",
+  "private": false, 
+  "os": ["!win32"],
+  "cpu": ["!arm"],
+  "man": ["./README.md"],
+  "engines": {
+    "node": ">14"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cli",
+    "weather"
+  ],
+  "author": "Alex Kriuchkov",
+  "license": "ISC",
+  "homepage": "https://weather-cli.ua",
+  "repository": {
+    "type": "git",
+    "url": "https://weather-cli.ua"
+  },
+  "bugs": {
+    "url": "https://weather-cli.ua",
+    "email": "ahookof@gmail.com"
+  }
+} 
