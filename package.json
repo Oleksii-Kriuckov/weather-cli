@@ -1,17 +1,14 @@
 {
-  "name": "weather-cli",
+  "name": "weather-cli-app-node1",
   "version": "1.0.0",
   "description": "CLI for getting weather",
-  "main": "index.js",
-  "private": false, 
-  "os": ["!win32"],
-  "cpu": ["!arm"],
-  "man": ["./README.md"],
-  "engines": {
-    "node": ">14"
+  "main": "weather.js",
+  "bin": {
+    "weather": "weather.js"
   },
+  "type": "module",
   "scripts": {
-    "start": "node index.js",
+    "start": "node weather.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -20,13 +17,18 @@
   ],
   "author": "Alex Kriuchkov",
   "license": "ISC",
-  "homepage": "https://weather-cli.ua",
+  "homepage": "https://just-it.com.ua/",
   "repository": {
     "type": "git",
-    "url": "https://weather-cli.ua"
+    "url": "https://just-it.com.ua/"
   },
   "bugs": {
-    "url": "https://weather-cli.ua",
+    "url": "https://just-it.com.ua/",
     "email": "ahookof@gmail.com"
+  },
+  "dependencies": {
+    "axios": "^1.1.3",
+    "chalk": "^5.1.2",
+    "dedent-js": "^1.0.1"
   }
-} 
+}
